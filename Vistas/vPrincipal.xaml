@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aaguirreS2.Vistas.vPrincipal"
+             Title="vPrincipal">
+    <VerticalStackLayout Spacing="20">
+        <Label x:Name="lblUsuario" FontSize="14" HorizontalTextAlignment="End" TextColor="Red"></Label>
+        <Label 
+            Text="Semana2: Elementos Visuales"
+            FontSize="24"
+            HorizontalTextAlignment="Center"
+             />
+        <Border Stroke="black">
+            <Picker x:Name="pkPaises" Title="Países">
+                <Picker.Items>
+                    <x:String>Ecuador</x:String>
+                    <x:String>Peru</x:String>
+                    <x:String>Colombia</x:String>
+                </Picker.Items>
+            </Picker>
+        </Border>
+        <Label x:Name="lblSeleccionado" 
+            TextColor="Red"
+            FontSize="18"
+            HorizontalTextAlignment="End"
+            Text=""/>
+        <Button x:Name="btnMostrar" Text="Mostrar Elementos" Clicked="btnMostrar_Clicked">
+        </Button>
+        <DatePicker x:Name="dpFechas" Date="12/04/2013" Format="MM/dd/yyyy"></DatePicker>
+
+        <Button x:Name="btnFecha" Text="Ver Fecha" Clicked="btnFecha_Clicked"></Button>
+       
+    </VerticalStackLayout>
+</ContentPage>
