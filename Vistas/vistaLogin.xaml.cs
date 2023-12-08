@@ -19,6 +19,8 @@ public partial class vistaLogin : ContentPage
 		else 
 		{
 			DisplayAlert("Alerta", "Usuario/Contraseña incorrectos", "Cancel");
+
+			///,kvh,jbh,jbhji
 		}
 
     }
